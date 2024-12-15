@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+outline: none;
+}
+
+body {  
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('supr.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", serif;
+}
+.form > * {
+    opacity: 1; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form {
+    width: 400px;
+    height: auto;
+    color: #fff; 
+    font-family: "Poppins", serif;
+}
+.alert-box {
+    opacity: 0;
+    position: absolute;
+    top: -155%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 450px;
+    max-width: 490px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: red;
+    border-top: 10px solid red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    font-family: "Poppins", serif;
+    text-align: center;
+    transition: 1s;
+}
+.alert-box.show {
+    opacity: 1;
+    top: 20%;
+}
+
+.heading {
+    opacity: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+}
+
+
+input,.submit {
+    opacity: 100;
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: white;
+    border: none;
+    color: black;
+    padding: 15px;
+    transition: .5s;
+   
+}
+
+input::placeholder{
+    color: fff;
+}
+
+input:focus,
+.submit:hover {
+background: black;
+color: white;
+}
+
+input:focus::placeholder{
+    color: white;
+}
+
+.submit{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    
+}
+
+.link {
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    transition: .4s;
+}
+
+.link:hover {
+    color: black;
+}

@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Disable scrolling */
+    background-image: url(supr3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+
+.home h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar select {
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #dcdcdc;
+    background-color: white;
+    font-size: 1rem;
+    width: 180px;
+    color: #333;
+    font-weight: 500;
+    transition: border-color 0.3s;
+}
+
+.search-bar select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.search-bar button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.search-bar button:active {
+    background-color: #003f7f;
+    transform: scale(1);
+}
+
+
+
+/* Advanced Search Link Styling */
+.advanced-link {
+    display: block;
+    margin-top: 5px;
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: 50px;
+    text-decoration: none; 
+    text-align: center;
+    transition: color 0.3s ease; 
+}
+
+/* Hover  */
+.advanced-link:hover {
+    color: hsla(0, 78%, 85%, 0.537); 
+    text-decoration: underline; 
+}
+
+
+.advanced-link:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.icon p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h2 {
+        font-size: 1rem;
+    }
+
+    .search-bar select {
+        width: 100%; 
+    }
+
+    .search-bar button {
+        width: 100%; 
+    }
+}

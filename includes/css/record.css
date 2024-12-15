@@ -1,0 +1,166 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    position: relative;
+    min-height: 100vh;
+}
+.container {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1em;
+}
+
+textarea {
+height: 150px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #e53935;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.record-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.record-button:hover {
+    background-color: #218838;
+}
+.record-button.recording {
+    background-color: #ff5722;
+}
+.status,
+.timer {
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+    text-align: center;
+}
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+}
+.loading-bar .progress {
+    width: 70%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.loading-bar .progress-inner {
+    height: 100%;
+    background-color: #28a745;
+    width: 0;
+    transition: width 0.5s ease;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(186, 186, 187);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+}
+.alert {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.loading-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
